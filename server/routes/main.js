@@ -42,22 +42,22 @@ function insertPostData() {
             title: "Discover how to use Express.js",
             body: "Discover how to use Express.js, a popular Node.js web framework, to build web applications."
         },
-        {
-            title: "Asynchronous Programming with Node.js",
-            body: "Asynchronous Programming with Node.js: Explore the asynchronous nature of Node.js and how it allows for non-blocking I/O operations."
-        },
-        {
-            title: "Learn the basics of Node.js and its architecture",
-            body: "Learn the basics of Node.js and its architecture, how it works, and why it is popular among developers."
-        },
-        {
-            title: "NodeJs Limiting Network Traffic",
-            body: "Learn how to limit netowrk traffic."
-        },
-        {
-            title: "Learn Morgan - HTTP Request logger for NodeJs",
-            body: "Learn Morgan."
-        },
+        // {
+        //     title: "Asynchronous Programming with Node.js",
+        //     body: "Asynchronous Programming with Node.js: Explore the asynchronous nature of Node.js and how it allows for non-blocking I/O operations."
+        // },
+        // {
+        //     title: "Learn the basics of Node.js and its architecture",
+        //     body: "Learn the basics of Node.js and its architecture, how it works, and why it is popular among developers."
+        // },
+        // {
+        //     title: "NodeJs Limiting Network Traffic",
+        //     body: "Learn how to limit netowrk traffic."
+        // },
+        // {
+        //     title: "Learn Morgan - HTTP Request logger for NodeJs",
+        //     body: "Learn Morgan."
+        // },
     ])
 }
 
