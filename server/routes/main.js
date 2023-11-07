@@ -14,12 +14,27 @@ router.get('', async (req, res) => {
             description: "Simple Blog create with NodeJs, Express & MongoDB."
         }
 
-        let parPage = 10;
+        let perPage = 6;
         let page = req.query.page || 1;
 
-        const data = await Post.aggregaten
+        const data = await Post.aggregate([{ $sort: { createdAt: -1 } }])
+            .skip(perPage * page - perPage)
+            .limit(perPage)
+            .exec();
 
-        res.render('index', { locals, data });
+        const count = await Post.count();
+        const nextPage = parseInt(page) + 1;
+        const hasNextPage = nextPage <= Math.ceil(count / perPage);
+
+        res.render('index', {
+            locals,
+            data,
+            current: page,
+            nextPage: hasNextPage ? nextPage : null
+        });
+
+
+
     } catch (error) {
         console.log(error);
     }
