@@ -70,6 +70,7 @@ router.post('/admin', async (req, res) => {
 
 router.get('/dashboard', async (req, res) => {
 
+    res.render('admin/dashboard');
 
 });
 
